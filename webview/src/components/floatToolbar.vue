@@ -2,7 +2,7 @@
     <div class="float-toolbar">
         <div :class="`float-toolbar-handler ${showContent ? '' : 'float-toolbar-handler-nocontent'}`"
             @click="$emit('handler-click')" >
-            {{_T("menu")}}
+            {{_T("Menu")}}
             <div v-if="!showContent" class="float-icon-triangle float-icon-triangle-right" style="border-left-color: #fff;" />
         </div>
         <div class="float-toolbar-content" v-if="showContent">
@@ -31,10 +31,10 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        margin: 17px;
-        background-color: transparent;
+        margin: 0px;
         border: 0px;
-        border-radius: 6px;
+        border-radius: 0px;
+        background-color: transparent;
         box-shadow: 0px 0px 6px rgba(128, 128, 128, 0.6);
         display: flex;
         flex-direction: row;
@@ -46,7 +46,7 @@
         width: 0px;
         height: 0px;
         padding: 0px;
-        margin-left: 3px;
+        margin-left: 5px;
         border: 0px solid #333;
     }
 
@@ -67,23 +67,24 @@
         background-color: rgba(46, 46, 46, 0.8);
         color: #fff;
         border: 0px;
-        border-radius: 6px 0px 0px 6px;
+        border-radius: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
         white-space: nowrap;
+        cursor: pointer;
     }
 
     .float-toolbar-handler-nocontent {
-        border-radius: 6px;
+        border-radius: 0px;
     }
 
     .float-toolbar-content {
         padding: 0px 6px 0px 0px;
-        background-color: rgba(255, 255, 255, 0.6);
-        color: #000;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #444;
         border: 0px;
         border-radius: 0px 6px 6px 0px;
         display: flex;
@@ -119,8 +120,9 @@
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         background-color: transparent;
-        font-size: 10px;
+        font-size: 13px;
         color: #333;
         display: flex;
         flex-direction: row;
@@ -173,7 +175,7 @@
         justify-content: center;
         align-items: center;
         background-color: rgba(255, 255, 220, 0.8);
-        font-size: 9px;
+        font-size: 11px;
         color: #333;
         display: none;
         white-space: nowrap;

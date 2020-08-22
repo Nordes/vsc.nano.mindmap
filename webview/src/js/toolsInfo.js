@@ -101,7 +101,7 @@ export default function () {
             height: 17,
             html: '<path d="M2 3H17V7H2V3H4M2.5 12H7.5M5 9.5V14.5M10 7V12H13M14 10H25V14H13V10H17" />'
         },
-        caption: 'Add Child (Ctrl+Down)',
+        caption: 'Add Child (Tab)',
         fn: () => this.execCmd('addSubTopic')
     }, {
         svg: {
@@ -109,7 +109,7 @@ export default function () {
             height: 17,
             html: '<path d="M1 8H7M4 5V11M10 5H25V11H10V5H17M10 8H25" />'
         },
-        caption: 'Add Sibling (Ctrl+Right)',
+        caption: 'Add Sibling (Enter)',
         notForRoot: true,
         fn: () => this.execCmd('addSiblingTopic')
     }, {

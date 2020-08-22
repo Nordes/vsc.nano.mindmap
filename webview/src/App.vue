@@ -10,18 +10,19 @@
                     'ctrl+alt+n': onNewWorkBook, 
                     'ctrl+o': onOpen,
                     'ctrl+s': onSave,
-                    'ctrl+down': 'addSubTopic', 
-                    'ctrl+right': 'addSiblingTopic',
+                    'tab': onAddSubTopic, 
+                    'enter': 'addSiblingTopic',
                     'up': 'selectParent',
                     'down': 'selectChild',
                     'left': 'selectPreviousSibling',
                     'right': 'selectNextSibling',
-                    'enter': 'editTopic',
                     'delete': 'deleteTopic',
                     'ctrl+z': onUndo,
                     'ctrl+y': onRedo,
+                    'f2': 'editTopic',
                     'f3': onStartSearch
             }" />
+
         <floatToolbar ref="toolbar" @handler-click="showMenuContent = !showMenuContent" :show-content="showMenuContent" 
             :items="menuContent">
             <div class="mind-input-panel" v-if="requestInput">
@@ -139,7 +140,6 @@
         border-color: #f00;
         background: linear-gradient(to top, rgba(255, 117, 117, 0.9) 26%,rgba(255, 0, 0, 0.9) 90%,rgba(217, 0, 0, 0.9) 100%);
     }
-
 </style>
 
 <script>
@@ -323,6 +323,15 @@
                     this.loadPage(mind[0]);
                     }
                 }
+            },
+            /**
+             * Add a sub topic with a default value and select the title to easy add item.
+             */
+            async onAddSubTopic() {
+                this.$refs.mindView['addSubTopic'](null, {title: translate.get('New Topic')});
+                setTimeout(() => {
+                    document.getElementsByClassName("mind-title-input")[0].select();
+                }, 1);
             },
             /**
              * 响应保存当前导图文件的菜单命令

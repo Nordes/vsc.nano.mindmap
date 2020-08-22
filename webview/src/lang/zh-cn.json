@@ -20,7 +20,7 @@
     "Searching operation have reached the end of the current mindmap": "当前思维导图页面已被查找完成",
     "Rename Page:": "重命名当前页面：",
     "Input page name": "输入页面的名称",
-    "menu": "菜单",
+    "Menu": "菜单",
     "File": "文件",
     "New&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+Alt+N": "新建&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+Alt+N",
     "Open&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+O": "打开……&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+O",
@@ -34,8 +34,8 @@
     "Undo (Ctrl+Z)": "撤销 (Ctrl+Z)",
     "Redo (Ctrl+Y)": "重做 (Ctrl+Y)",
     "Search": "查找",
-    "Add Child (Ctrl+Down)": "添加子主题 (Ctrl+Down)",
-    "Add Sibling (Ctrl+Right)": "添加兄弟主题 (Ctrl+Right)",
+    "Add Child (Tab)": "添加子主题 (Tab)",
+    "Add Sibling (Ctrl+Right)": "添加兄弟主题 (Enter)",
     "Remove": "删除主题",
     "Properties:": "属性:",
     "Labels": "标签",
@@ -52,5 +52,6 @@
     "Fold to level 2": "折叠到第二级主题",
     "Fold to level 3": "折叠到第三级主题",
     "Import KM": "导入百度脑图(*.km)",
-    "Export as KM": "导出为百度脑图(*.km)"
+    "Export as KM": "导出为百度脑图(*.km)",
+    "New Topic": "新主题"
 }
